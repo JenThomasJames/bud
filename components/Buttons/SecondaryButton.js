@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, Pressable } from "react-native";
 import Colors from "../../utils/colors";
-const PrimaryButton = ({ children }) => {
+const SecondaryButton = ({ children }) => {
   return (
     <Pressable>
       <View style={styles.btn}>
@@ -9,17 +9,17 @@ const PrimaryButton = ({ children }) => {
     </Pressable>
   );
 };
-export default PrimaryButton;
+export default SecondaryButton;
 const styles = StyleSheet.create({
   btn: {
-    backgroundColor: Colors.primary700,
+    borderWidth: 1,
+    borderColor: Colors.primary700,
     margin: 20,
     paddingHorizontal: 32,
     paddingVertical: 18,
     borderRadius: 33,
   },
   text: {
-    color: Colors.secondary100,
-    fontWeight: "800",
+    color: Colors.primary700,
   },
 });
